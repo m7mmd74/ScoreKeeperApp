@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:padding="6dp"
+                    android:text="@string/team_a"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="san-serif-light"
+                    android:gravity="center_horizontal"
+                    android:padding="6dp"
+                    android:text="@string/_0"
+                    android:textColor="#000000"
+                    android:textSize="50sp" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:onClick="addSixForTeamA"
+                    android:text="@string/_6_points" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:onClick="addThreeForTeamA"
+                    android:text="@string/_3_points" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:onClick="addTwoForTeamA"
+                    android:text="@string/_2_points" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:onClick="addOneForTeamA"
+                    android:text="@string/_1_points" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:padding="6dp"
+                    android:text="@string/team_b"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="san-serif-light"
+                    android:gravity="center_horizontal"
+                    android:padding="6dp"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="50sp" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:onClick="addSixForTeamB"
+                    android:text="+6 Points" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:onClick="addThreeForTeamB"
+                    android:text="+3 Points" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:onClick="addTwoForTeamB"
+                    android:text="+2 Points" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:onClick="addOneForTeamB"
+                    android:text="+1 Points" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="32dp"
+            android:onClick="resetScore"
+            android:text="Reset" />
+    </RelativeLayout>
+</ScrollView>
